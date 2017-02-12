@@ -9,8 +9,8 @@
   "scripts": {
     "build": "NODE_ENV=production webpack --config configs/webpack.config.js && babel src/server --out-dir build/server",
     "dev": "node scripts/dev.js",
-    "start": "nodemon build/server/index",
-    "test": "eslint src && jest"
+    "start": "node scripts/start.js",
+    "test": "jest"
   },
   "keywords": [],
   "bin": {},

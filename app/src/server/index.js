@@ -1,2 +1,9 @@
 require('babel-polyfill')
-require('./app')()
+
+const main = require('./app')
+
+module.exports = main
+
+if (module === require.main) {
+  main()
+}
